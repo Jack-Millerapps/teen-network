@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --paper: #f4f1ea;
+  --paper-raised: #ffffff;
+  --ink: #1c1a17;
+  --ink-soft: #5a564a;
+  --ink-faint: #8a8272;
+  --line: #e0d9c8;
+  --line-soft: #eee8db;
+  --navy: #142845;
+  --navy-strong: #0d1c31;
+  --navy-soft: #eef2f6;
+  --gold: #b8862e;
+  --gold-strong: #8a6420;
+  --verified: #2e5c34;
+  --verified-soft: #eef4ec;
+  --verified-line: #b9d4b3;
+  --pending: #8a5a12;
+  --pending-soft: #faf1de;
+  --pending-line: #e6cd97;
+  --shadow-card: 0 1px 2px rgba(28, 26, 23, 0.04), 0 6px 16px -10px rgba(28, 26, 23, 0.12);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-primary: var(--navy);
+  --color-primary-strong: var(--navy-strong);
+  --color-primary-soft: var(--navy-soft);
+  --color-accent: var(--gold);
+  --color-accent-strong: var(--gold-strong);
+  --color-verified: var(--verified);
+  --color-verified-soft: var(--verified-soft);
+  --color-verified-line: var(--verified-line);
+  --color-pending: var(--pending);
+  --color-pending-soft: var(--pending-soft);
+  --color-pending-line: var(--pending-line);
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Public Sans", "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+.card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+  border-radius: 6px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.tag-verified {
+  color: var(--verified);
+  background: var(--verified-soft);
+  border-color: var(--verified-line);
+}
+
+.tag-pending {
+  color: var(--pending);
+  background: var(--pending-soft);
+  border-color: var(--pending-line);
+}

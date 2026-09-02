@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600;700&family=Martian+Mono:wght@400;500&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #F9F6F0; font-family: "Instrument Sans", "Helvetica Neue", sans-serif; color: #22201D; }
+    a { color: #6E2B3C; } a:hover { color: #55202D; }
+    .d { font-family: "Bricolage Grotesque", Georgia, serif; letter-spacing: -0.025em; }
+    .m { font-family: "Martian Mono", ui-monospace, monospace; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; min-height: 1560px; background: #F9F6F0;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0 40px; background: #6E2B3C;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9F6F0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 20V7"></path><path d="M4 20h16"></path>
+        <path d="M8 20V13"></path><path d="M13 20V9"></path><path d="M18 20V4"></path>
+      </svg>
+      <span class="d" style="color: #F9F6F0; font-size: 19px; font-weight: 700;">Trajectory</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 22px;">
+      <span class="m" style="color: #E3C3CB; font-size: 10px; letter-spacing: 0.04em;">LOG IN</span>
+      <div style="background: #F9F6F0; padding: 8px 16px;">
+        <span class="m" style="color: #6E2B3C; font-size: 10px; letter-spacing: 0.04em;">GET STARTED</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero: asymmetric, type-led -->
+  <div style="max-width: 1200px; margin: 0 auto; padding: 76px 40px 64px; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 64px; align-items: center;">
+    <div>
+      <p class="m" style="margin: 0 0 22px; font-size: 10px; letter-spacing: 0.14em; color: #6E2B3C;">SOLD TO DISTRICTS · FREE TO FAMILIES</p>
+      <h1 class="d" style="margin: 0; font-size: 68px; line-height: 0.98; font-weight: 700; text-wrap: balance;">
+        Proof they did the work.
+      </h1>
+      <p style="margin: 24px 0 0; max-width: 470px; font-size: 17.5px; line-height: 1.55; color: #55524C;">
+        Students write down the jobs, shifts and projects they actually do — then the employer or
+        mentor who was there confirms it. What comes out is a record someone else stands behind,
+        not a resume line they typed about themselves.
+      </p>
+      <div style="display: flex; gap: 12px; margin-top: 34px;">
+        <div style="background: #6E2B3C; color: #F9F6F0; padding: 14px 26px; font-size: 15px; font-weight: 600;">Create an account</div>
+        <div style="border: 1px solid #22201D; padding: 14px 26px; font-size: 15px; font-weight: 600;">I already have one</div>
+      </div>
+      <p style="margin: 20px 0 0; font-size: 13px; color: #6E6A64;">
+        Records start private. Nothing leaves the school until a parent or guardian consents.
+      </p>
+    </div>
+
+    <!-- Specimen card: the artifact itself as the hero image -->
+    <div style="border: 1px solid #E5DFD4; background: #FFFFFF;">
+      <div style="display: flex; align-items: center; justify-content: space-between; padding: 13px 18px; border-bottom: 1px solid #E5DFD4;">
+        <span class="m" style="font-size: 9px; letter-spacing: 0.11em; color: #6E2B3C;">STUDENT RECORD</span>
+        <span class="m" style="font-size: 9px; letter-spacing: 0.06em; color: #9A958C;">REC-4471</span>
+      </div>
+      <div style="padding: 22px 18px;">
+        <p class="d" style="margin: 0; font-size: 24px; font-weight: 700;">Ava Thompson</p>
+        <p style="margin: 4px 0 0; font-size: 13.5px; color: #6E6A64;">Junior · Maple Ridge High School</p>
+
+        <div style="display: flex; flex-direction: column; margin-top: 22px;">
+          <div style="padding: 13px 0; border-top: 1px solid #F0EBE1;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+              <p style="margin: 0; font-size: 14px; font-weight: 600;">Counter Lead</p>
+              <span class="m" style="font-size: 8.5px; letter-spacing: 0.07em; color: #2E6B4A;">CONFIRMED</span>
+            </div>
+            <p style="margin: 3px 0 0; font-size: 12.5px; color: #6E6A64;">Riverbend Coffee Roasters</p>
+          </div>
+          <div style="padding: 13px 0; border-top: 1px solid #F0EBE1;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+              <p style="margin: 0; font-size: 14px; font-weight: 600;">Volunteer Handler</p>
+              <span class="m" style="font-size: 8.5px; letter-spacing: 0.07em; color: #2E6B4A;">CONFIRMED</span>
+            </div>
+            <p style="margin: 3px 0 0; font-size: 12.5px; color: #6E6A64;">Maple Ridge Animal Shelter</p>
+          </div>
+          <div style="padding: 13px 0; border-top: 1px solid #F0EBE1;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+              <p style="margin: 0; font-size: 14px; font-weight: 600;">Lead Builder</p>
+              <span class="m" style="font-size: 8.5px; letter-spacing: 0.07em; color: #8A6318;">AWAITING</span>
+            </div>
+            <p style="margin: 3px 0 0; font-size: 12.5px; color: #6E6A64;">FRC Robotics Team 4118</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Roles: three columns, rule-separated, no cards -->
+  <div style="border-top: 1px solid #E5DFD4; background: #FFFFFF;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 62px 40px;">
+      <h2 class="d" style="margin: 0 0 40px; font-size: 30px; font-weight: 700;">Three people, one job each</h2>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px;">
+        <div style="border-top: 2px solid #22201D; padding-top: 18px;">
+          <p class="m" style="margin: 0 0 10px; font-size: 9.5px; letter-spacing: 0.11em; color: #6E2B3C;">01 — STUDENTS</p>
+          <p class="d" style="margin: 0 0 9px; font-size: 19px; font-weight: 600;">Write it down while it&rsquo;s fresh</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #55524C;">
+            A shift, a volunteer morning, a club, something you built. Then ask the person who was
+            actually there to confirm it.
+          </p>
+        </div>
+        <div style="border-top: 2px solid #22201D; padding-top: 18px;">
+          <p class="m" style="margin: 0 0 10px; font-size: 9.5px; letter-spacing: 0.11em; color: #6E2B3C;">02 — EMPLOYERS &amp; MENTORS</p>
+          <p class="d" style="margin: 0 0 9px; font-size: 19px; font-weight: 600;">Answer one question</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #55524C;">
+            A student says they worked with you. You say yes or no. That&rsquo;s the entire commitment —
+            no profile to maintain, nothing to sell.
+          </p>
+        </div>
+        <div style="border-top: 2px solid #22201D; padding-top: 18px;">
+          <p class="m" style="margin: 0 0 10px; font-size: 9.5px; letter-spacing: 0.11em; color: #6E2B3C;">03 — SCHOOLS</p>
+          <p class="d" style="margin: 0 0 9px; font-size: 19px; font-weight: 600;">Hold the consent</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #55524C;">
+            You already collect parent consent. You record it here, and that is what lets a
+            student&rsquo;s record leave the building.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Employer door -->
+  <div style="max-width: 1200px; margin: 0 auto; padding: 58px 40px;">
+    <div style="border: 1px solid #22201D; padding: 34px 36px; display: flex; align-items: center; justify-content: space-between; gap: 40px;">
+      <div style="max-width: 660px;">
+        <h2 class="d" style="margin: 0 0 10px; font-size: 25px; font-weight: 700;">Someone asked you to confirm their work?</h2>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #55524C;">
+          A student listed you as the person who can vouch for what they did. Make a free account with
+          the email address they used and their request will already be sitting there. It takes about a minute.
+        </p>
+      </div>
+      <div style="flex: none; border: 1px solid #6E2B3C; color: #6E2B3C; padding: 13px 22px; font-size: 14px; font-weight: 600; white-space: nowrap;">Set up that account</div>
+    </div>
+  </div>
+
+  <!-- Pricing: oxblood slab -->
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 40px 70px;">
+    <div style="background: #6E2B3C; padding: 46px 42px; display: flex; align-items: flex-end; justify-content: space-between; gap: 40px;">
+      <div>
+        <p class="m" style="margin: 0 0 14px; font-size: 10px; letter-spacing: 0.13em; color: #E3C3CB;">DISTRICT PRICING</p>
+        <h2 class="d" style="margin: 0; font-size: 40px; line-height: 1.05; font-weight: 700; color: #F9F6F0;">
+          $8 per student, per year.
+        </h2>
+        <p style="margin: 14px 0 0; max-width: 560px; font-size: 15px; line-height: 1.55; color: #EBD3D9;">
+          Billed to the district, like the rest of what the school provides. Students and families
+          never see a bill, and never see an upsell.
+        </p>
+      </div>
+      <div style="flex: none; background: #F9F6F0; color: #6E2B3C; padding: 14px 26px; font-size: 15px; font-weight: 600;">Talk to us</div>
+    </div>
+  </div>
+
+  <div style="border-top: 1px solid #E5DFD4; background: #FFFFFF;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 26px 40px; display: flex; align-items: center; justify-content: space-between;">
+      <span class="m" style="font-size: 9.5px; letter-spacing: 0.06em; color: #9A958C;">© 2026 TRAJECTORY</span>
+      <div style="display: flex; gap: 26px;">
+        <span class="m" style="font-size: 9.5px; letter-spacing: 0.06em; color: #6E6A64;">PRIVACY &amp; STUDENT DATA</span>
+        <span class="m" style="font-size: 9.5px; letter-spacing: 0.06em; color: #6E6A64;">TERMS</span>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

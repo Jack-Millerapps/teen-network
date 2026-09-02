@@ -1,0 +1,121 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// SQLite has no native enum type; these are enforced at the app layer (src/lib/enums.ts):
+// Role: STUDENT | MENTOR | COMPANY | SCHOOL_ADMIN
+// ExperienceType: JOB | VOLUNTEER | PROJECT | EXTRACURRICULAR
+// EndorsementStatus: PENDING | VERIFIED | DECLINED
+// ConsentStatus: PENDING | GRANTED | REVOKED
+
+model School {
+  id       String   @id @default(cuid())
+  name     String
+  district String
+  students StudentProfile[]
+  admins   User[]
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  passwordHash  String
+  name          String
+  role          String
+  createdAt     DateTime @default(now())
+
+  school        School?  @relation(fields: [schoolId], references: [id])
+  schoolId      String?
+
+  studentProfile   StudentProfile?
+  orgProfile       OrgProfile?
+  endorsementsMade Endorsement[]
+}
+
+model StudentProfile {
+  id          String   @id @default(cuid())
+  user        User     @relation(fields: [userId], references: [id])
+  userId      String   @unique
+  headline    String?
+  bio         String?
+  avatarUrl   String?
+  birthdate   DateTime
+  school      School   @relation(fields: [schoolId], references: [id])
+  schoolId    String
+  isPublic    Boolean  @default(false)
+
+  entries     ExperienceEntry[]
+  consent     Consent?
+
+  createdAt   DateTime @default(now())
+}
+
+model OrgProfile {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String   @unique
+  orgName   String
+  orgType   String   // "mentor" | "company"
+  bio       String?
+  logoUrl   String?
+}
+
+model ExperienceEntry {
+  id          String         @id @default(cuid())
+  student     StudentProfile @relation(fields: [studentId], references: [id])
+  studentId   String
+  type        String
+  title       String
+  org         String
+  description String?
+  startDate   DateTime
+  endDate     DateTime?
+  createdAt   DateTime       @default(now())
+
+  endorsements Endorsement[]
+}
+
+model Endorsement {
+  id         String            @id @default(cuid())
+  entry      ExperienceEntry   @relation(fields: [entryId], references: [id])
+  entryId    String
+  endorser   User?             @relation(fields: [endorserId], references: [id])
+  endorserId String?
+  // Kept strictly separate: requestNote is written by the STUDENT when asking,
+  // note is written by the ENDORSER. Sharing one column let a student's own
+  // words render on their profile attributed to the employer.
+  requestNote String?
+  note       String?
+  status     String            @default("PENDING")
+  createdAt  DateTime          @default(now())
+
+  // A student's real supervisor usually has no account yet. Rather than force
+  // them to pick a stranger from a dropdown (which produced a coffee shop
+  // "verifying" library tutoring), a request can name an outside person by
+  // email and claim itself once that person signs up.
+  inviteEmail String?
+  inviteName  String?
+}
+
+model Consent {
+  id             String        @id @default(cuid())
+  student        StudentProfile @relation(fields: [studentId], references: [id])
+  studentId      String        @unique
+  parentName     String
+  parentEmail    String
+  status         String        @default("PENDING")
+  method         String        // how consent was obtained, e.g. "school-recorded"
+  grantedAt      DateTime?
+  createdAt      DateTime      @default(now())
+
+  // Consent is collected OFFLINE by the school; the app only records it. These
+  // two fields keep that attributable — who at the school recorded it and what
+  // paperwork backs it — so publishing a minor's record is never an anonymous click.
+  recordedBy     String?
+  evidence       String?
+}

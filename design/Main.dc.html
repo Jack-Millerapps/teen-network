@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600;700&family=Martian+Mono:wght@400;500&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #F9F6F0; font-family: "Instrument Sans", "Helvetica Neue", sans-serif; color: #22201D; }
+    a { color: #6E2B3C; } a:hover { color: #55202D; }
+    .d { font-family: "Bricolage Grotesque", Georgia, serif; letter-spacing: -0.02em; }
+    .m { font-family: "Martian Mono", ui-monospace, monospace; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; min-height: 1180px; background: #F9F6F0;">
+
+  <!-- Masthead: oxblood bar, mono wordmark lockup -->
+  <div style="display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0 40px; background: #6E2B3C;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9F6F0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 20V7"></path><path d="M4 20h16"></path>
+        <path d="M8 20V13"></path><path d="M13 20V9"></path><path d="M18 20V4"></path>
+      </svg>
+      <span class="d" style="color: #F9F6F0; font-size: 19px; font-weight: 700;">Trajectory</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 28px;">
+      <span class="m" style="color: #E3C3CB; font-size: 10px; letter-spacing: 0.04em;">OVERVIEW</span>
+      <span class="m" style="color: #E3C3CB; font-size: 10px; letter-spacing: 0.04em;">LOG</span>
+      <span class="m" style="color: #F9F6F0; font-size: 10px; letter-spacing: 0.04em; border-bottom: 2px solid #F9F6F0; padding-bottom: 3px;">RECORD</span>
+      <span class="m" style="color: #E3C3CB; font-size: 10px; letter-spacing: 0.04em;">EXPORT</span>
+      <div style="width: 28px; height: 28px; border-radius: 2px; background: #8A3A4D; display: flex; align-items: center; justify-content: center;">
+        <span class="m" style="color: #F9F6F0; font-size: 10px;">AT</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Record header band: ledger framing -->
+  <div style="border-bottom: 1px solid #E5DFD4; background: #FFFFFF;">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 34px 40px 30px;">
+
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 26px;">
+        <span class="m" style="font-size: 10px; letter-spacing: 0.14em; color: #6E2B3C;">STUDENT RECORD</span>
+        <span class="m" style="font-size: 10px; letter-spacing: 0.08em; color: #9A958C;">MAPLE RIDGE HIGH SCHOOL · REC-4471</span>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; gap: 32px;">
+        <div style="width: 96px; height: 96px; flex: none; border: 1px solid #E5DFD4; background: #F2EDE4; display: flex; align-items: center; justify-content: center;">
+          <svg width="96" height="96" viewBox="0 0 96 96">
+            <rect width="96" height="96" fill="#F2EDE4"></rect>
+            <circle cx="48" cy="36" r="16" fill="#C9BFAE"></circle>
+            <path d="M16 90 C16 68 30 60 48 60 C66 60 80 68 80 90 Z" fill="#C9BFAE"></path>
+          </svg>
+        </div>
+
+        <div style="flex: 1; min-width: 0;">
+          <h1 class="d" style="margin: 0; font-size: 46px; line-height: 1.02; font-weight: 700; color: #22201D;">Ava Thompson</h1>
+          <p style="margin: 10px 0 0; font-size: 16px; color: #55524C;">Junior · aspiring mechanical engineer</p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
+            <span style="display: inline-flex; align-items: center; gap: 6px; border: 1px solid #B7CFC0; background: #EDF4EF; padding: 5px 10px;">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2E6B4A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="m" style="font-size: 9.5px; letter-spacing: 0.08em; color: #2E6B4A;">CONSENT ON FILE</span>
+            </span>
+            <span style="display: inline-flex; align-items: center; border: 1px solid #E5DFD4; background: #F9F6F0; padding: 5px 10px;">
+              <span class="m" style="font-size: 9.5px; letter-spacing: 0.08em; color: #6E6A64;">3 OF 4 CONFIRMED</span>
+            </span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 8px; flex: none; width: 184px;">
+          <div style="background: #6E2B3C; color: #F9F6F0; padding: 11px 16px; text-align: center; font-size: 13.5px; font-weight: 600;">Copy record link</div>
+          <div style="border: 1px solid #22201D; color: #22201D; padding: 11px 16px; text-align: center; font-size: 13.5px; font-weight: 600;">Export</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width: 1120px; margin: 0 auto; padding: 36px 40px 60px; display: grid; grid-template-columns: minmax(0, 1fr) 296px; gap: 44px; align-items: start;">
+
+    <!-- Experience ledger -->
+    <div>
+      <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid #22201D; padding-bottom: 9px;">
+        <h2 class="d" style="margin: 0; font-size: 22px; font-weight: 700;">Experience</h2>
+        <span class="m" style="font-size: 9.5px; letter-spacing: 0.08em; color: #9A958C;">4 ENTRIES</span>
+      </div>
+
+      <div style="display: flex; flex-direction: column;">
+
+        <!-- Entry 1 -->
+        <div style="display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 22px; padding: 26px 0; border-bottom: 1px solid #E5DFD4;">
+          <div>
+            <p class="m" style="margin: 0; font-size: 9.5px; line-height: 1.7; letter-spacing: 0.04em; color: #6E6A64;">JUN 2025<br>PRESENT</p>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <p class="d" style="margin: 0; font-size: 19px; font-weight: 600;">Counter Lead</p>
+              <span style="border: 1px solid #B7CFC0; background: #EDF4EF; padding: 3px 7px;">
+                <span class="m" style="font-size: 9px; letter-spacing: 0.07em; color: #2E6B4A;">CONFIRMED</span>
+              </span>
+            </div>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #55524C;">Riverbend Coffee Roasters · Job</p>
+            <p style="margin: 11px 0 0; font-size: 14.5px; line-height: 1.6; color: #33312C;">Open and close the counter, train new hires, handle the weekend rush on my own shift.</p>
+            <div style="margin-top: 14px; border-left: 2px solid #6E2B3C; padding: 2px 0 2px 13px;">
+              <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #33312C; font-style: italic;">&ldquo;Ava has been reliable and great with regulars.&rdquo;</p>
+              <p class="m" style="margin: 5px 0 0; font-size: 9px; letter-spacing: 0.06em; color: #6E6A64;">RIVERBEND COFFEE ROASTERS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 2 -->
+        <div style="display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 22px; padding: 26px 0; border-bottom: 1px solid #E5DFD4;">
+          <div>
+            <p class="m" style="margin: 0; font-size: 9.5px; line-height: 1.7; letter-spacing: 0.04em; color: #6E6A64;">JAN 2025<br>PRESENT</p>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <p class="d" style="margin: 0; font-size: 19px; font-weight: 600;">Volunteer Handler</p>
+              <span style="border: 1px solid #B7CFC0; background: #EDF4EF; padding: 3px 7px;">
+                <span class="m" style="font-size: 9px; letter-spacing: 0.07em; color: #2E6B4A;">CONFIRMED</span>
+              </span>
+            </div>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #55524C;">Maple Ridge Animal Shelter · Volunteering</p>
+            <p style="margin: 11px 0 0; font-size: 14.5px; line-height: 1.6; color: #33312C;">Weekend dog-walking and intake support, about 4 hours a week since January.</p>
+            <div style="margin-top: 14px; border-left: 2px solid #6E2B3C; padding: 2px 0 2px 13px;">
+              <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #33312C; font-style: italic;">&ldquo;Consistent volunteer, good with the animals.&rdquo;</p>
+              <p class="m" style="margin: 5px 0 0; font-size: 9px; letter-spacing: 0.06em; color: #6E6A64;">MAPLE RIDGE ANIMAL SHELTER</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 3: awaiting -->
+        <div style="display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 22px; padding: 26px 0; border-bottom: 1px solid #E5DFD4;">
+          <div>
+            <p class="m" style="margin: 0; font-size: 9.5px; line-height: 1.7; letter-spacing: 0.04em; color: #6E6A64;">AUG 2024<br>PRESENT</p>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <p class="d" style="margin: 0; font-size: 19px; font-weight: 600;">Lead Builder</p>
+              <span style="border: 1px solid #E0C68E; background: #FBF4E4; padding: 3px 7px;">
+                <span class="m" style="font-size: 9px; letter-spacing: 0.07em; color: #8A6318;">AWAITING</span>
+              </span>
+            </div>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #55524C;">FRC Robotics Team 4118 · Project</p>
+            <p style="margin: 11px 0 0; font-size: 14.5px; line-height: 1.6; color: #33312C;">Designed and built the drivetrain for our competition robot this season.</p>
+          </div>
+        </div>
+
+        <!-- Entry 4: self-reported -->
+        <div style="display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 22px; padding: 26px 0;">
+          <div>
+            <p class="m" style="margin: 0; font-size: 9.5px; line-height: 1.7; letter-spacing: 0.04em; color: #6E6A64;">JUN 2024<br>AUG 2024</p>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <p class="d" style="margin: 0; font-size: 19px; font-weight: 600;">Reading Tutor</p>
+              <span style="border: 1px solid #E5DFD4; background: #F2EDE4; padding: 3px 7px;">
+                <span class="m" style="font-size: 9px; letter-spacing: 0.07em; color: #6E6A64;">SELF-REPORTED</span>
+              </span>
+            </div>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #55524C;">Maple Ridge Public Library · Volunteering</p>
+            <p style="margin: 11px 0 0; font-size: 14.5px; line-height: 1.6; color: #33312C;">Ran the children&rsquo;s summer reading table on Saturday mornings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ledger sidebar -->
+    <div style="display: flex; flex-direction: column; gap: 26px;">
+
+      <div style="border: 1px solid #E5DFD4; background: #FFFFFF; padding: 20px;">
+        <p class="m" style="margin: 0 0 14px; font-size: 9.5px; letter-spacing: 0.11em; color: #6E2B3C;">CONFIRMATIONS</p>
+        <div style="display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid #F0EBE1;">
+            <span style="font-size: 13.5px; color: #55524C;">Confirmed</span>
+            <span class="m" style="font-size: 14px; color: #2E6B4A;">2</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid #F0EBE1;">
+            <span style="font-size: 13.5px; color: #55524C;">Awaiting</span>
+            <span class="m" style="font-size: 14px; color: #8A6318;">1</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid #F0EBE1;">
+            <span style="font-size: 13.5px; color: #55524C;">Self-reported</span>
+            <span class="m" style="font-size: 14px; color: #22201D;">1</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; padding: 9px 0 0;">
+            <span style="font-size: 13.5px; font-weight: 600; color: #22201D;">Total</span>
+            <span class="m" style="font-size: 14px; color: #22201D;">4</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="border: 1px solid #E5DFD4; background: #FFFFFF; padding: 20px;">
+        <p class="m" style="margin: 0 0 12px; font-size: 9.5px; letter-spacing: 0.11em; color: #6E2B3C;">READING THIS RECORD</p>
+        <p style="margin: 0; font-size: 13px; line-height: 1.65; color: #55524C;">
+          A <span class="m" style="font-size: 9px; letter-spacing: 0.06em; color: #2E6B4A;">CONFIRMED</span> entry was
+          verified by the organization named beneath it — not by the student. Anything else is the student&rsquo;s own account.
+        </p>
+      </div>
+
+      <div style="border: 1px solid #E5DFD4; background: #FFFFFF; padding: 20px;">
+        <p class="m" style="margin: 0 0 12px; font-size: 9.5px; letter-spacing: 0.11em; color: #6E2B3C;">SCHOOL</p>
+        <p class="d" style="margin: 0; font-size: 16px; font-weight: 600; color: #22201D;">Maple Ridge High School</p>
+        <p style="margin: 3px 0 0; font-size: 12.5px; color: #6E6A64;">Maple Ridge Unified School District</p>
+        <p style="margin: 14px 0 0; padding-top: 13px; border-top: 1px solid #F0EBE1; font-size: 12.5px; line-height: 1.65; color: #6E6A64;">
+          13 students here keep a record. Each one stays private until that student&rsquo;s own consent is on file — there is no directory to browse.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

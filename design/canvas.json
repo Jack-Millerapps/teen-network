@@ -1,0 +1,93 @@
+{
+  "artboards": [
+    {
+      "file": "Landing.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 1860,
+      "title": "Landing"
+    },
+    {
+      "file": "Overview.dc.html",
+      "x": 1560,
+      "y": 0,
+      "w": 1440,
+      "h": 1060,
+      "title": "Student — Overview"
+    },
+    {
+      "file": "Main.dc.html",
+      "x": 3120,
+      "y": 0,
+      "w": 1440,
+      "h": 1240,
+      "title": "Student — Record"
+    },
+    {
+      "file": "Log.dc.html",
+      "x": 0,
+      "y": 2020,
+      "w": 1440,
+      "h": 1380,
+      "title": "Student — Log"
+    },
+    {
+      "file": "Requests.dc.html",
+      "x": 1560,
+      "y": 2020,
+      "w": 1440,
+      "h": 1060,
+      "title": "Employer — Requests"
+    },
+    {
+      "file": "Consent.dc.html",
+      "x": 3120,
+      "y": 2020,
+      "w": 1440,
+      "h": 1010,
+      "title": "School — Consent register"
+    },
+    {
+      "file": "Mobile.dc.html",
+      "x": 0,
+      "y": 3560,
+      "w": 390,
+      "h": 844,
+      "title": "Record on a phone"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "direction",
+      "x": -620,
+      "y": 0,
+      "w": 520,
+      "text": "DIRECTION — \"Ledger\"\n\nThe product's whole value is that someone else vouched for the claim. So the interface borrows from records and registers: ruled rows instead of floating cards, a mono face for anything that is data (dates, IDs, status stamps), and status shown as a stamped tag rather than a coloured pill.\n\nType: Bricolage Grotesque (display) / Instrument Sans (text) / Martian Mono (record data).\n\nPalette: oxblood #6E2B3C on warm oat #F9F6F0, near-black ink. Green and amber stay strictly semantic — they never appear as brand colour."
+    },
+    {
+      "id": "note-status",
+      "x": 4680,
+      "y": 0,
+      "w": 420,
+      "text": "Every entry carries a status stamp — CONFIRMED / AWAITING / SELF-REPORTED. A refused or unasked entry can never render as a blank, which is how a declined claim used to pass as a confirmed one."
+    },
+    {
+      "id": "note-consent",
+      "x": 4680,
+      "y": 2020,
+      "w": 420,
+      "text": "The register states plainly that Trajectory never contacts parents, and every recorded line is stamped with the staff name and file reference. The attestation checkbox is required before a record can be published."
+    },
+    {
+      "id": "note-mobile",
+      "x": 520,
+      "y": 3560,
+      "w": 420,
+      "text": "Teenagers are on phones, so the record is designed at 390px too — no hamburger-hidden primary actions, 46px tap targets, and the confirmation quote stays visible rather than being truncated away."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

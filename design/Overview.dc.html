@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600;700&family=Martian+Mono:wght@400;500&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #F9F6F0; font-family: "Instrument Sans", "Helvetica Neue", sans-serif; color: #22201D; }
+    a { color: #6E2B3C; } a:hover { color: #55202D; }
+    .d { font-family: "Bricolage Grotesque", Georgia, serif; letter-spacing: -0.02em; }
+    .m { font-family: "Martian Mono", ui-monospace, monospace; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; min-height: 1060px; background: #F9F6F0;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0 40px; background: #6E2B3C;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F9F6F0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 20V7"></path><path d="M4 20h16"></path>
+        <path d="M8 20V13"></path><path d="M13 20V9"></path><path d="M18 20V4"></path>
+      </svg>
+      <span class="d" style="color: #F9F6F0; font-size: 19px; font-weight: 700;">Trajectory</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 28px;">
+      <span class="m" style="color: #F9F6F0; font-size: 10px; letter-spacing: 0.04em; border-bottom: 2px solid #F9F6F0; padding-bottom: 3px;">OVERVIEW</span>
+      <span class="m" style="color: #E3C3CB; font-size: 10px; letter-spacing: 0.04em;">LOG</span>
+      <span class="m" style="color: #E3C3CB; font-size: 10px; letter-spacing: 0.04em;">RECORD</span>
+      <span class="m" style="color: #E3C3CB; font-size: 10px; letter-spacing: 0.04em;">EXPORT</span>
+      <div style="width: 28px; height: 28px; border-radius: 2px; background: #8A3A4D; display: flex; align-items: center; justify-content: center;">
+        <span class="m" style="color: #F9F6F0; font-size: 10px;">AT</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width: 1000px; margin: 0 auto; padding: 46px 40px 60px;">
+
+    <p class="m" style="margin: 0 0 16px; font-size: 10px; letter-spacing: 0.13em; color: #6E2B3C;">FRIDAY, 31 AUGUST</p>
+    <h1 class="d" style="margin: 0; font-size: 42px; line-height: 1.05; font-weight: 700;">Morning, Ava.</h1>
+    <p style="margin: 14px 0 0; max-width: 620px; font-size: 16px; line-height: 1.55; color: #55524C;">
+      One thing needs you today. Everything else is running.
+    </p>
+
+    <!-- The single most important thing, given its own weight -->
+    <div style="margin-top: 34px; border: 1px solid #22201D; background: #FFFFFF;">
+      <div style="display: flex; align-items: stretch;">
+        <div style="width: 6px; background: #8A6318; flex: none;"></div>
+        <div style="padding: 26px 28px; flex: 1;">
+          <p class="m" style="margin: 0 0 10px; font-size: 9.5px; letter-spacing: 0.11em; color: #8A6318;">NEEDS YOU</p>
+          <p class="d" style="margin: 0 0 8px; font-size: 22px; font-weight: 600;">
+            Nobody is confirming &ldquo;Reading Tutor&rdquo; yet
+          </p>
+          <p style="margin: 0; max-width: 560px; font-size: 14.5px; line-height: 1.6; color: #55524C;">
+            You logged it in June and never asked anyone to vouch for it. Ask whoever ran the library
+            programme — it takes one field and their email.
+          </p>
+          <div style="display: inline-flex; margin-top: 18px; background: #6E2B3C; color: #F9F6F0; padding: 11px 20px; font-size: 14px; font-weight: 600;">
+            Ask someone to confirm it
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counts as a ledger strip, not four floating cards -->
+    <div style="margin-top: 34px; border: 1px solid #E5DFD4; background: #FFFFFF; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));">
+      <div style="padding: 22px 24px; border-right: 1px solid #E5DFD4;">
+        <p class="m" style="margin: 0 0 9px; font-size: 9px; letter-spacing: 0.1em; color: #6E6A64;">CONFIRMED</p>
+        <p class="d" style="margin: 0; font-size: 34px; line-height: 1; font-weight: 700; color: #2E6B4A;">2</p>
+      </div>
+      <div style="padding: 22px 24px; border-right: 1px solid #E5DFD4;">
+        <p class="m" style="margin: 0 0 9px; font-size: 9px; letter-spacing: 0.1em; color: #6E6A64;">AWAITING</p>
+        <p class="d" style="margin: 0; font-size: 34px; line-height: 1; font-weight: 700; color: #8A6318;">1</p>
+      </div>
+      <div style="padding: 22px 24px; border-right: 1px solid #E5DFD4;">
+        <p class="m" style="margin: 0 0 9px; font-size: 9px; letter-spacing: 0.1em; color: #6E6A64;">NOT ASKED</p>
+        <p class="d" style="margin: 0; font-size: 34px; line-height: 1; font-weight: 700; color: #22201D;">1</p>
+      </div>
+      <div style="padding: 22px 24px;">
+        <p class="m" style="margin: 0 0 9px; font-size: 9px; letter-spacing: 0.1em; color: #6E6A64;">RECORD IS</p>
+        <p class="d" style="margin: 0; font-size: 20px; line-height: 1.15; font-weight: 700; color: #22201D;">Shareable</p>
+        <p style="margin: 3px 0 0; font-size: 12px; color: #6E6A64;">Consent on file</p>
+      </div>
+    </div>
+
+    <!-- Two doors, rule-separated -->
+    <div style="margin-top: 40px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px;">
+      <div style="border-top: 2px solid #22201D; padding-top: 17px;">
+        <p class="d" style="margin: 0 0 7px; font-size: 18px; font-weight: 600;">My log</p>
+        <p style="margin: 0 0 12px; font-size: 13.5px; line-height: 1.6; color: #55524C;">
+          Add something new, edit what&rsquo;s there, chase a confirmation.
+        </p>
+        <span class="m" style="font-size: 9.5px; letter-spacing: 0.07em; color: #6E2B3C;">4 ENTRIES →</span>
+      </div>
+      <div style="border-top: 2px solid #22201D; padding-top: 17px;">
+        <p class="d" style="margin: 0 0 7px; font-size: 18px; font-weight: 600;">My record</p>
+        <p style="margin: 0 0 12px; font-size: 13.5px; line-height: 1.6; color: #55524C;">
+          Exactly what a mentor, employer or college sees when you share it.
+        </p>
+        <span class="m" style="font-size: 9.5px; letter-spacing: 0.07em; color: #6E2B3C;">VIEW AS THEY SEE IT →</span>
+      </div>
+      <div style="border-top: 2px solid #22201D; padding-top: 17px;">
+        <p class="d" style="margin: 0 0 7px; font-size: 18px; font-weight: 600;">Export</p>
+        <p style="margin: 0 0 12px; font-size: 13.5px; line-height: 1.6; color: #55524C;">
+          Your record as a resume section to paste into an application.
+        </p>
+        <span class="m" style="font-size: 9.5px; letter-spacing: 0.07em; color: #6E2B3C;">PRINT OR SAVE PDF →</span>
+      </div>
+    </div>
+
+    <!-- Collapsed setup, honest -->
+    <div style="margin-top: 42px; border-top: 1px solid #E5DFD4; padding-top: 18px; display: flex; align-items: center; justify-content: space-between;">
+      <p style="margin: 0; font-size: 13px; color: #6E6A64;">Setup checklist — all four steps done.</p>
+      <span class="m" style="font-size: 9.5px; letter-spacing: 0.07em; color: #6E2B3C;">SHOW</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
